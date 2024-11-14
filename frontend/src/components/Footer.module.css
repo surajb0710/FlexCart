@@ -1,0 +1,19 @@
+.footerNavbar {
+  padding: 5px 60px;
+  background: black;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.footerLogo {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.footerLink {
+  text-decoration: none;
+  flex-grow: 0;
+  padding: 5px 10px;
+}

@@ -1,0 +1,49 @@
+.navbar {
+  padding: 5px 60px;
+  background: black;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.navbarLogo {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.linksNavbar {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navItem {
+  position: relative;
+}
+
+.navbarLink {
+  text-decoration: none;
+  flex-grow: 0;
+  padding: 5px 10px;
+}
+
+.navbarSearchContainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-grow: 1;
+  background-color: black;
+}
+
+.navbarSearch {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+}
+
+.navbarSigninBtn {
+  padding: 5px 10px;
+  background-color: chocolate;
+  border-radius: 5px;
+}

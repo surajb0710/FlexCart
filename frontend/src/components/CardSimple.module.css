@@ -1,0 +1,41 @@
+.card {
+  height: auto;
+  /* width: 100%; */
+  padding: 10px;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+/* .card:hover {
+  scale: 1.1;
+} */
+
+.cardImage {
+  object-fit: cover;
+  height: 50%;
+  width: 100%;
+}
+
+.cardDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardYear,
+.cardDuration,
+.cardTag {
+  font-size: 12px;
+}
+
+.cardTag {
+  padding: 2px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
