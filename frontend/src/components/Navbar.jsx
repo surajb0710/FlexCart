@@ -3,34 +3,36 @@ import { IoSearchSharp } from 'react-icons/io5';
 import { FaRegCircleUser } from 'react-icons/fa6';
 import { FaRegHeart } from 'react-icons/fa';
 import { IoCartSharp } from 'react-icons/io5';
+import NavDropdownItem from './NavDropdownItem';
 
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.navbarLogo}>FilmNest</div>
-      <ul className={styles.asNavbar}>
-        <li className="nav-item">
-          <a href="/" className={styles.navbara}>
+      <ul className={styles.linksNavbar}>
+        <NavDropdownItem />
+        <li className={styles.navItem}>
+          <a href="/" className={styles.navbarLink}>
             Men
           </a>
         </li>
-        <li className="nav-item">
-          <a href="/" className={styles.navbara}>
+        <li className={styles.navItem}>
+          <a href="/" className={styles.navbarLink}>
             Women
           </a>
         </li>
-        <li className="nav-item">
-          <a href="/" className={styles.navbara}>
+        <li className={styles.navItem}>
+          <a href="/" className={styles.navbarLink}>
             Kids
           </a>
         </li>
-        <li className="nav-item">
-          <a href="/" className={styles.navbara}>
+        <li className={styles.navItem}>
+          <a href="/" className={styles.navbarLink}>
             Home & Living
           </a>
         </li>
-        <li className="nav-item">
-          <a href="/" className={styles.navbara}>
+        <li className={styles.navItem}>
+          <a href="/" className={styles.navbarLink}>
             Beauty
           </a>
         </li>

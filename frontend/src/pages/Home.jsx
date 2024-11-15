@@ -24,8 +24,6 @@ const Home = () => {
       });
   }, []);
 
-  console.log(products[0]);
-
   if (loading) return <div>Loading products...</div>;
   if (error) return <div>{error}</div>;
 

@@ -47,7 +47,11 @@
 .navItem:hover .dropdownMenu {
   visibility: visible;
   opacity: 1;
-  /* display: inline-block; */
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  /* display: grid;
+  grid-template-columns: repeat(1fr, 1fr, 1fr); */
 }
 
 .dropdownItem {
