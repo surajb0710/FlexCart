@@ -1,18 +1,7 @@
 .navItem {
-  position: relative;
-  transition: background 0.5s;
+  /* position: relative; */
+  /* transition: background 0.5s; */
   padding: 0 15px;
-}
-
-.navItem:hover {
-  /* color: white; */
-  cursor: pointer;
-}
-
-.navItem:hover a {
-  color: white;
-  padding: 5px 0;
-  margin: 20px 0;
 }
 
 .navbarLink {
@@ -20,14 +9,23 @@
   display: flex;
   align-items: center;
   justify-content: left;
+  padding: 30px 0;
 }
 
-.dropdownMenu {
-  background: black;
-  visibility: hidden;
-  opacity: 0;
+.dropdownBlock {
+  display: flex;
+  width: auto;
+  height: auto;
   position: absolute;
-  transition: opacity 0.5s;
+  background: black;
+  left: 230px;
+  /* visibility: hidden; */
+}
+
+.categorySection {
+  /* visibility: hidden; */
+  /* opacity: 0; */
+  /* transition: opacity 0.5s; */
   margin-top: 1rem;
   left: 0;
   display: none;
@@ -39,43 +37,64 @@
   padding: 0 15px;
   z-index: 10;
   list-style: none;
-  display: grid;
-  width: 400px;
-  grid-template-columns: repeat(3, 1fr);
+  display: block;
+  width: 200px;
+  margin-bottom: 20px;
+  /* height: 100%; */
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
 }
 
-.navItem:hover .dropdownMenu {
+/* .navItem:hover .categorySection {
   visibility: visible;
   opacity: 1;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  /* display: grid;
-  grid-template-columns: repeat(1fr, 1fr, 1fr); */
+  background: black;
+
+  .dropdownBlock {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+} */
+
+.navItem .categorySection {
+  visibility: visible;
+  /* opacity: 1; */
+  /* background: black; */
+
+  .dropdownBlock {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
-.dropdownItem {
+.mainCategory {
   width: 100%;
   margin: 0;
-  padding: 5px 0;
-  border-bottom: 1px solid black;
+  padding: 2px 0 5px 0;
 }
 
-.dropDownItemLink {
+.mainCategoryLink {
   display: flex;
   justify-content: space-between;
   gap: 40px;
   text-decoration: none;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 800;
 }
 
-/* .markets-link:hover {
-  .markets-link {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
+.subCategory {
+  width: 100%;
+  margin: 0;
+  padding: 2px 0;
+}
 
-  .markets-menu {
-    display: block;
-  }
-} */
+.subCategoryLink {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+}
